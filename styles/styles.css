@@ -1,21 +1,20 @@
 .formNick {
     width: 500px;
     padding: 20px;
-    background-color: grey;
-    border: 3px solid beige;
+    background-color:rgb(241, 241, 241);
     border-radius: 10px;
 }
 
 .formNick h3,
 p {
-    color: white;
+    color: black;
     padding: 10px;
 }
 
 .formNick label {
     font-size: 16px;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 .formNick input[type="text"],
@@ -24,10 +23,9 @@ textarea {
     padding: 12px;
     font-size: 16px;
     margin-bottom: 20px;
-    border: 1px solid black;
+   border: 1px solid black;
     border-radius: 10px;
     box-sizing: border-box;
-    color: black;
 }
 
 

@@ -1,3 +1,20 @@
+.img-fit{
+    height: 200px;
+    object-fit: cover;
+}
+
+.conteiner-box{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+main{
+    height: 100vh;
+}
+
+
 .formNick {
     width: 500px;
     padding: 20px;
@@ -50,5 +67,5 @@ textarea {
 .social img {
     margin: 0.2em;
     width: 50px;
-
+    margin-top: 20px;
 }

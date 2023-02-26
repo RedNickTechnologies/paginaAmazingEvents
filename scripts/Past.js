@@ -1,10 +1,21 @@
-let events=data.events;
+function createTemplate(){
+    let events= data.events;
 
-let past_Events=[];
+    let templates=[];
 
-for(let event of events){
-    if(event.date < data.currentDate){
-        past_Events.push(event)
+    for (let evento of events){
+        if(evento.date < data.currentDate){
+
+            console.log(evento);
+            
+            templates.push(template(evento.image, evento.name, evento.description, evento.price));
+        }
+        
     }
+    console.log(templates)
+
+    let selector =document.getElementById("past");
+    selector.innerHTML=templates.join("");
+
 }
-createTemplate(past_Events,"past");
+ createTemplate();

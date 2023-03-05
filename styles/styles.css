@@ -4,9 +4,16 @@
 }
 
 .conteiner-box{
-    min-height: 180vh;
+    min-height: 220vh;
     display: flex;
     flex-direction: column;
+
+}
+
+h2 {
+    font-family: 'Caprica Script Personal Use', sans-serif;
+    font-family: 'Caprica Script Upr Personal Use', sans-serif;
+    color: #e0046c;
 
 }
 

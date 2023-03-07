@@ -1,3 +1,8 @@
+function captureData(){
+    let captureText= document.getElementById("id_search").value
+    console.log(captureText)
+}
+
 function createTemplate(){
     let events= data.events;
 

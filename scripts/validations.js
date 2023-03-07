@@ -35,8 +35,8 @@ if (isNaN(edad)) {
 /**
  * Third question
  */
-let preguntaMascota = 'qué mascota tiene? (perro-gato-loro-conejo-tortuga)'
-let mascota = prompt(preguntaMascota)
+let preguntaCategoria = 'whats category are you want? (food fair-Museum-comicon-costume party-Music Concert- Race- Book Exchange - cinema)'
+let mascota = prompt(preguntaCategoria)
 
 if (mascota == 'perro' 
     || mascota == 'gato' 

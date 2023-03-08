@@ -10,7 +10,7 @@ function captureData() {
       if (filtro.length>0) {
         createTemplate2(filtro)
     } else {
-        notFound('#pet_container')
+        notFound('upcoming')
       }
 
 }

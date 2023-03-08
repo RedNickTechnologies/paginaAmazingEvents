@@ -8,7 +8,7 @@ function createTemplate(){
 
             console.log(evento);
             
-            templates.push(template(evento.image, evento.name, evento.description, evento.price));
+            templates.push(template(evento.image, evento.name, evento.description, evento.price, evento.id));
         }
         
     }

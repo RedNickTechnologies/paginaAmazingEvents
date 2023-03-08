@@ -3,6 +3,11 @@
     object-fit: cover;
 }
 
+.img-Details{
+    height: 300px;
+    object-fit: cover;
+}
+
 .conteiner-box{
     min-height: 220vh;
     display: flex;

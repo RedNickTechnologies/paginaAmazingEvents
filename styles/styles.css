@@ -9,7 +9,7 @@
 }
 
 .conteiner-box{
-    min-height: 220vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 

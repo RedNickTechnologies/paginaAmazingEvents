@@ -1,15 +1,15 @@
-.img-fit{
-    height: 200px;
+.img-fit {
+    height: 20rem;
     object-fit: cover;
 }
 
-.img-Details{
-    height: 300px;
+.img-Details {
+    height: 30rem;
     object-fit: cover;
 }
 
-.conteiner-box{
-    min-height: 220vh;
+.conteiner-box {
+    height: 100vh;
     display: flex;
     flex-direction: column;
 
@@ -22,11 +22,11 @@ h2 {
 
 }
 
-main{
+main {
     height: 100vh;
 }
 
-.arrow{
+.arrow {
     width: 50px;
 }
 
@@ -84,3 +84,13 @@ textarea {
     width: 50px;
     margin-top: 20px;
 }
+
+/* iPhone XR, XS Max */
+@media (min-height: 414px) and (max-height: 414px) and (min-width: 896px) and (max-width: 896px) and (orientation: landscape) {
+    /* ACÁ VAN TUS ESTILOS */
+    #card-home{
+        transform: scale(0.75) !important;
+        }
+    }
+
+

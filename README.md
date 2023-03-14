@@ -1,2 +1,2 @@
 # paginaAmazingEvents
- pagina con funcionalidades javascript
+ pagina a la cual se le agregaran funcionalidades javascript

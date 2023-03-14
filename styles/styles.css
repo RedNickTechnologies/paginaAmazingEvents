@@ -1,0 +1,95 @@
+.img-fit {
+    height: 20rem;
+    object-fit: cover;
+}
+
+.img-Details {
+    height: 30rem;
+    object-fit: cover;
+}
+
+.conteiner-box {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h2 {
+    font-family: 'Caprica Script Personal Use', sans-serif;
+    font-family: 'Caprica Script Upr Personal Use', sans-serif;
+    color: #e0046c;
+
+}
+
+main {
+    height: 100vh;
+}
+
+.arrow {
+    width: 50px;
+}
+
+.formNick {
+    width: 500px;
+    padding: 20px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+}
+
+.formNick h3,
+p {
+    color: black;
+    padding: 10px;
+}
+
+.formNick label {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.formNick input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+.formNick input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 24px;
+}
+
+.formNick input[type="submit"]:hover {
+    color: white
+}
+
+.logo {
+    width: 200px;
+}
+
+.social {
+    margin-right: 0.5em;
+}
+
+.social img {
+    margin: 0.2em;
+    width: 50px;
+    margin-top: 20px;
+}
+
+/* iPhone XR, XS Max */
+@media (min-height: 414px) and (max-height: 414px) and (min-width: 896px) and (max-width: 896px) and (orientation: landscape) {
+    #card-home{
+        transform: scale(0.75) !important;
+        }
+    }
+
+

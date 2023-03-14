@@ -1,3 +1,5 @@
+/* Eventos de Past */
+
 function captureData() {
     let texto = document.getElementById('id_search').value
     let checks = Array.from(document.querySelectorAll('.class_checks:checked')).map(each => each.value)
@@ -20,31 +22,12 @@ function createTemplate2(arrayFiltrado){
 
     for (let evento of arrayFiltrado){
         
-        console.log(evento);
-
-        templates.push(template(evento.image, evento.name, evento.description, evento.price, evento._id));
-        
-    }
-    console.log(templates)
-
-    let selector =document.getElementById("past");
-    selector.innerHTML=templates.join("");
-
-}
-
-function createTemplate(){
-    let events= data.events;
-
-    let templates=[];
-
-    for (let evento of events){
         if(evento.date < data.currentDate){
 
             console.log(evento);
             
             templates.push(template(evento.image, evento.name, evento.description, evento.price, evento._id));
         }
-        
     }
     console.log(templates)
 
@@ -52,4 +35,4 @@ function createTemplate(){
     selector.innerHTML=templates.join("");
 
 }
- createTemplate();
+ createTemplate2(data.events);

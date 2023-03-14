@@ -31,23 +31,4 @@ function createTemplate2(arrayFiltrado){
     selector.innerHTML=templates.join("");
 
 }
-
-function createTemplate(){
-    let events= data.events;
-
-    let templates=[];
-
-    for (let evento of events){
-        
-        console.log(evento);
-
-        templates.push(template(evento.image, evento.name, evento.description, evento.price, evento._id));
-        
-    }
-    console.log(templates)
-
-    let selector =document.getElementById("card-home");
-    selector.innerHTML=templates.join("");
-
-}
- createTemplate();
+ createTemplate2(data.events);

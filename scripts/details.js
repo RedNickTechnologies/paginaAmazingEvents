@@ -4,7 +4,7 @@ let Query= location.search
 console.log(Query)
 
 let event_Param = new URLSearchParams(Query)
-let id_query =event_Param.get("id")
+let id_query =event_Param.get("_id")
 console.log(id_query)
 
 let event_ONE = data.events[id_query - 1]

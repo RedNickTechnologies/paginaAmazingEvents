@@ -37,7 +37,7 @@ function createTemplate2(currentDate, arrayFiltrado){
 
             console.log(evento);
             
-            templates.push(template(evento.image, evento.name, evento.description, evento.price, evento._id));
+            templates.push(template(evento.image, evento.name, evento.description, evento.price, evento.id));
         }
     }
     console.log(templates)

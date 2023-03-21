@@ -14,11 +14,18 @@ async function printabla1() {
             return obj
         }).sort((p1, p2) => p1.percent - p2.percent)
 
-        console.log()
+        let capacity= events.map(each=> {
+            let obj={
+                name : each.name,
+                capacity : each.capacity
+            }
+            return obj
+        }).sort((p1, p2) => p1.capacity - p2.capacity)
 
-        let porcentajeAsist
+        console.log(stats)
+        console.log(capacity)
 
-        document.getElementById("D-Table-1").innerHTML=templateTable1(stats[stats.length - 1], stats[0])
+        document.getElementById("D-Table-1").innerHTML=templateTable1(stats[stats.length - 1], stats[0], capacity[capacity.length - 1])
 
 
 
@@ -44,11 +51,10 @@ async function printabla2() {
                 categories.push(each.category)
             }
         }))
-        // console.log(categories);
 
         for (let evento of eventos) {
             evento.ganancia = evento.estimate * evento.price;
-            // console.log(eventos.ganancia)
+
         }
 
         let acum = []
@@ -118,10 +124,8 @@ async function printabla3() {
                 assistotal += evento.assistance;
                 captotal += evento.capacity;
             })
-            // console.log(category + " => Ganancia:" + ganancia + ", Asistencia:" + assistotal + ", Capacidad:" + captotal);
             let porcentaje = assistotal / captotal * 100;
             porcentaje = porcentaje.toFixed(2);
-            //console.log(porcentaje);
 
             let card = `<tr class="t-body">
                  <td colspan="1">${category}</td>
@@ -142,12 +146,12 @@ printabla3()
 
 
 
-function templateTable1(max, min) {
+function templateTable1(max, min, capac) {
     return `
     <tr>
-        <td>${max.nombre} ${(max.max)}</td>
-        <td>${min.nombre} ${(min.min)}</td>
-        <td> capac.nombre capac.capacity </td>
+        <td>${max.name} ${max.percent.toFixed(2)} %</td>
+        <td>${min.name} ${min.percent.toFixed(2)} %</td>
+        <td>${capac.name} ${capac.capacity} </td>
     </tr>
 `
 }

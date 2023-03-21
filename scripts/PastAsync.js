@@ -4,9 +4,9 @@ async function captureData() {
     try{
         let urlApi ="https://api-amazingevents.onrender.com/api/amazing-events";
         let fetchResponse = await fetch(urlApi);
-        //console.log (fetchResponse);
+       
         let response = await fetchResponse.json();
-       // console.log(response)
+       
         let currentDate= response.currentDate;
 
         let texto = document.getElementById('id_search').value
@@ -14,9 +14,7 @@ async function captureData() {
         let filtro = response.events.filter(each => {
             return (each.name.toLowerCase().includes(texto.toLowerCase())) && (checks.length === 0 || checks.includes(each.category))
         })
-        //console.log(filtro)
-        //console.log(texto)
-        //console.log(checks)
+  
           if (filtro.length>0) {
             createTemplate2(currentDate, filtro)
         } else {
@@ -36,7 +34,7 @@ function createTemplate2(currentDate, arrayFiltrado){
         
         if(evento.date < currentDate){
 
-       //     console.log(evento);
+    
             
             templates.push(template(evento.image, evento.name, evento.description, evento.price, evento.id));
         }

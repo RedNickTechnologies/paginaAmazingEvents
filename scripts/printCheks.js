@@ -3,15 +3,15 @@ async function captureCheks() {
     let tipos = [] //tipos va a ser el array que va a tener los tipos de animal SIN repetirse
     let urlApi = "https://api-amazingevents.onrender.com/api/amazing-events";
     let fetchResponse = await fetch(urlApi);
-    //console.log(fetchResponse);
+
     let response = await fetchResponse.json(); //solo decodifica, no convierte en JSON
-    //console.log(response)
+
     response.events.forEach(each => {
         if (!tipos.includes(each.category)) {
             tipos.push(each.category)
         }
     })
-    //console.log(tipos)
+  
     printChecks(tipos);
 }
 

@@ -3,58 +3,23 @@ async function printabla1() {
         let urlApi = "https://api-amazingevents.onrender.com/api/amazing-events?time=past";
         let fetchResponse = await fetch(urlApi);
         let response = await fetchResponse.json();
-        let eventos = response.events;
-
-        for (let evento of eventos) {
-            evento.porcentaje = evento.assistance / evento.capacity * 100;
-            evento.porcentaje = evento.porcentaje.toFixed(2);
-        }
+        let events = response.events;
 
 
-        eventos.sort((a, b) => a.porcentaje - b.porcentaje)
+        let stats= events.map(each=> {
+            let obj={
+                name : each.name,
+                percent : 100 * (each.assistance / each.capacity)
+            }
+            return obj
+        }).sort((p1, p2) => p1.percent - p2.percent)
 
+        console.log()
 
-         let nombreMAX_ASIST = eventos[eventos.lenght - 1].name;
-        console.log(nombreMAX_ASIST);
+        let porcentajeAsist
 
-        let maxAsist = eventos(eventos.lenght - 1).porcentaje;
-        console.log(maxAsist);
+        document.getElementById("D-Table-1").innerHTML=templateTable1(stats[stats.length - 1], stats[0])
 
-        let maxStats = {
-            nombre : nombreMAX_ASIST,
-            max  : maxAsist
-        }
-
-        let nombreMIN_ASIST = eventos[0].name;
-        console.log(nombreMIN_ASIST);
-
-        let minAsist = porcentajeEventos[0].porcentaje;
-        console.log(minAsist);
-
-        let minStats = {
-            nombre : nombreMIN_ASIST,
-            max  : minAsist
-        }
- 
-
-        eventos.sort((a, b) => a.capacity - b.capacity);
-
-         let nombreMAX_CAPACIDAD = [capacidadEventos.lenght - 1].name;
-        console.log(nombreMAX_CAPACIDAD);
-
-        let cantMAX_CAPACIDAD = capacidadEventos[capacidadEventos.lenght - 1].capacity;
-        console.log(cantMAX_CAPACIDAD);
-
-        let capacidadStats = {
-
-            nombre : nombreMAX_CAPACIDAD,
-            max : cantMAX_CAPACIDAD
-        }
-        
-        let tableONE= templateTable1(maxStats, minStats, capacidadStats)
-
-        let selector =document.getElementById("D-Table-1");
-        selector.innerHTML=tableONE.join("");
 
 
 
@@ -63,8 +28,8 @@ async function printabla1() {
     }
 }
 
-printabla1();
 
+printabla1();
 
 async function printabla2() {
     try {
@@ -175,12 +140,14 @@ async function printabla3() {
 
 printabla3()
 
-function templateTable1(max, min, capac) {
+
+
+function templateTable1(max, min) {
     return `
     <tr>
-        <td>${max.nombre} ${parceInt(max.max)}</td>
-        <td>${min.nombre} ${parceInt(min.min)}</td>
-        <td>${cap.nombre} ${capac.capacity}</td>
+        <td>${max.nombre} ${(max.max)}</td>
+        <td>${min.nombre} ${(min.min)}</td>
+        <td> capac.nombre capac.capacity </td>
     </tr>
 `
 }

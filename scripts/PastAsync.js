@@ -36,7 +36,7 @@ function createTemplate2(currentDate, arrayFiltrado){
         
         if(evento.date < currentDate){
 
-            console.log(evento);
+       //     console.log(evento);
             
             templates.push(template(evento.image, evento.name, evento.description, evento.price, evento.id));
         }

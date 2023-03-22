@@ -16,37 +16,39 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <img src="../assets/Logo_Amazing_Events.png" alt="" class="logo">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./UpcomingEvents.html">Upcoming Events</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./PastEvents.html">Past Events</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Stats</a>
-                  </li>
-                </ul>
-              </div>
+                <img src="../assets/Logo_Amazing_Events.png" alt="" class="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./UpcomingEvents.html">Upcoming
+                                Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./PastEvents.html">Past Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Stats</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
-        <div class="d-flex justify-content-around bg-secondary-subtle">
+        </nav>
+        <div class="d-flex justify-content-around bg-secondary-subtle fondoNav">
             <a href="./PastEvents.html"><img src="../assets/Flecha_Izq.jpg" class="arrow" alt=""></a>
             <h2>Stats</h2>
             <a href="./index.html"><img src="../assets/Flecha_Der.jpg" class="arrow" alt=""></a>
-          </div>
+        </div>
     </header>
     <main class="flex-grow-1">
 
@@ -59,77 +61,49 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <thead class="table-active">
                             <td>Events with the highest percentage of attendance</td>
                             <td>Events with the lowest percentage of attendance</td>
                             <td>Event with larger capacity</td>
-                        </tr>
+                        </thead>
+                        <tbody id ="D-Table-1">
 
-                        <tr>
-                            <td>text</td>
-                            <td>text</td>
-                            <td>text</td>
-                        </tr>
+                        </tbody>
+                        </td>
                         <thead>
                             <tr>
                                 <th colspan="3" class="table-active">Upcoming events statistics by category</th>
                             </tr>
                         </thead>
-                    <tbody>
-                        <td>Categories</td>
-                        <td>Revenues</td>
-                        <td>Percentage of attendance</td>
-                    </tbody>
-                    <tbody>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                    </tbody>
-                    <tbody>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                    </tbody>
-                    <tbody>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
+                        <thead>
+                            <tr>
+                                <th class="table-active">Category</th>
+                                <th class="table-active">Earnings</th>
+                                <th class="table-active">Percentage of Attendance</th>
+                            </tr>
+                        </thead>
+                    <tbody id="D-Table-2">
                     </tbody>
                     <thead>
                         <tr>
                             <th colspan="3" class="table-active">Past events statistics by category</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                    </tbody>
-                    <tbody>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                    </tbody>
-                    <tbody>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                    </tbody>
-                    <tbody>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                    </tbody>
-                    <tbody>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
+
+                    <thead>
+                        <tr>
+                            <th class="table-active">Category</th>
+                            <th class="table-active">Earnings</th>
+                            <th class="table-active">Percentage of Attendance</th>
+                        </tr>
+                    </thead>
+                    <tbody id="D-Table-3">
                     </tbody>
                 </table>
             </article>
     </main>
 
-    <footer class="bg-dark-subtle">
+    <footer class="bg-dark.bg-gradient text-white">
         <div class="d-flex justify-content-start social">
             <a href="https://www.instagram.com/" target="_blank"><img src="../assets/instagram.png" alt="Instagram"
                     id="instagram"></a>
@@ -139,12 +113,14 @@
                     id="twitter"></a>
         </div>
         <div class="d-flex justify-content-end">
-            <h3>Cohort</h3>
+            <h3>FE05-TN</h3>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <script src="../scripts/CreateTable.js"></script>
+    <script src="../scripts/Table.js"></script>
 </body>
 
 </html>

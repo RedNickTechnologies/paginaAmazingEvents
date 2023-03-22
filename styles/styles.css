@@ -3,6 +3,18 @@
     object-fit: cover;
 }
 
+.checks{
+    color: aliceblue;
+}
+
+.fondoNav{
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/15/08/23/tape-1458416_1280.png);
+    /* background-image: url(https://www.publicdomainpictures.net/pictures/90000/nahled/film-strip-bleu-1.jpg); */
+    background-position: center 25%;
+    background-size: 16rem;
+}
+
+
 .img-Details {
     height: 30rem;
     object-fit: cover;
@@ -12,6 +24,10 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: white;
+    background-image: url(https://p1.pxfuel.com/preview/323/951/634/auditorium-stadium-bench-chairs.jpg);
+    background-position: center 25%;
+    background-size: cover;
 
 }
 
@@ -25,6 +41,7 @@ h2 {
 main {
     height: 100vh;
 }
+
 
 .arrow {
     width: 50px;
@@ -85,7 +102,7 @@ textarea {
     margin-top: 20px;
 }
 
-/* iPhone XR, XS Max */
+/* prueba de query en iPhone XR, XS Max */
 @media (min-height: 414px) and (max-height: 414px) and (min-width: 896px) and (max-width: 896px) and (orientation: landscape) {
     #card-home{
         transform: scale(0.75) !important;

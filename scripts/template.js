@@ -5,8 +5,8 @@ let template = (foto,titulo,descripcion,precio,id)=> {
     <div class="card-body">
       <h5 class="card-title">${titulo}</h5>
       <p class="card-text">${descripcion}.</p>
-      <small class="text-muted fs-6"> Price$ ${precio}</small>
-      <a href="./details.html?id=${id}" class="btn btn-primary">Details</a>
+      <small class="d-flex align-items-end text-muted fs-6"> Price$ ${precio}</small>
+      <a href="./details.html?id=${id}" class="btn btn-dark d-flex align-items-end">Details</a>
     </div>
   </div>
   `
